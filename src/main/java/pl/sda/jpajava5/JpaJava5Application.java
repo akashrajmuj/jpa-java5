@@ -19,6 +19,7 @@ public class JpaJava5Application implements CommandLineRunner {
     final QuizRepository quizRepository;
     final AnswerRepository answerRepository;
     final CompletedQuizRepository completedQuizRepository;
+
     @Autowired
     public JpaJava5Application(QuestionRepository questionRepository, QuizRepository quizRepository, AnswerRepository answerRepository, CompletedQuizRepository completedQuizRepository) {
         this.questionRepository = questionRepository;

@@ -35,6 +35,7 @@ metoda post  - parametry formularza nie są wysyłane w pasku adresu, ma nieogra
             <option value="green">Zielony</option>
             <option value="blue">Niebieski</option>
         </select>
+        <br>
         Ulubione zwierzęta:
         <select name="fanimal" multiple>
             <option value="cat">Kot</option>
@@ -42,6 +43,14 @@ metoda post  - parametry formularza nie są wysyłane w pasku adresu, ma nieogra
             <option value="cavia">Kawia</option>
             <option value="fishes">Rybki</option>
         </select>
+        <br>
+        Ulubione imię:
+        <input type="text" name="fname" list="fnames"><br>
+        <datalist id="fnames">
+            <option>Agnieszka</option>
+            <option>Monika</option>
+            <option>Karolina</option>
+        </datalist>
     </fieldset>
     <input type="submit" value="Zapisz">
 </form>

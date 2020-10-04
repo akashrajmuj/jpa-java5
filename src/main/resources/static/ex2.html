@@ -5,12 +5,17 @@
     <title>Formularze</title>
 </head>
 <body>
-<form>
-    <label>Login</label>
-    <input type="text" placeholder="Wpisz swój login"><br>
+<h1>Formularz logowania</h1>
+<!--
+Hasło otwartym tekstem w adresie, dodaj method get do form
+<form method="get">
+-->
+<form method="post">
+    <label for="login">Login</label>
+    <input id="login" type="text" name="login" placeholder="Wpisz swój login"><br>
     <label>Hasło</label>
-    <input type="password" placeholder="Wpisz swoje hasło"><br>
-    <input type="submit" value="Zalguj">
+    <input type="password" name="password" placeholder="Wpisz swoje hasło"><br>
+    <input type="submit" value="Zaloguj">
 </form>
 </body>
 </html>

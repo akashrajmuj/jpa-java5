@@ -7,15 +7,18 @@
 <body>
 <h1>Formularz logowania</h1>
 <!--
-Hasło otwartym tekstem w adresie, dodaj method get do form
+metoda get - hasło otwartym tekstem w adresie,ograniczona ilośc znaków:
 <form method="get">
--->
+metoda post  - parametry formularza nie są wysyłane w pasku adresu, ma nieograniczoną długość ciągu danych, można podejżeć w konsoli:
 <form method="post">
+-->
+<form method="post" action="ex1.html">
     <label for="login">Login</label>
     <input id="login" type="text" name="login" placeholder="Wpisz swój login"><br>
     <label>Hasło</label>
     <input type="password" name="password" placeholder="Wpisz swoje hasło"><br>
-    <input type="submit" value="Zaloguj">
+    <input type="submit" value="Zaloguj"><br>
+    <button type="reset">Wyczyść formularz</button>
 </form>
 </body>
 </html>
